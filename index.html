@@ -3,30 +3,174 @@
   <head>
     <meta charset="utf-8">
     <title>Emily Thomson Yoga</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Karla|Libre+Baskerville|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <script src="/js/app.js" charset="utf-8"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5p7q8Ryzq-b1m8hPfLttH0nYSQx_hLRk&libraries=places" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="center">
       <div class="topper"></div>
     	<div class="info-container animated fadeOut">
     		<div class="center-box">
-    			<div class="info-box" onclick="toggleAbout()"><p class="info-text">About Me</p></div>
-    			<div class="info-box" onclick="toggleTime"><p class="info-text">Time Table</p></div>
-    			<div class="info-box" onclick="toggleClassOne"><p class="info-text">Class 1</p></div>
-    			<div class="info-box" onclick="toggleClassTwo"><p class="info-text">Class 2</p></div>
+    			<div class="info-box" id="about"><p class="info-text">About Me</p></div>
+    			<div class="info-box" id="contact"><p class="info-text">Contact</p></div>
+    			<div class="info-box" id="classOne"><p class="info-text">Classes</p></div>
     		</div>
     	</div>
 
-        <!-- <div class="footer"></div> -->
+      <div id="aboutModal" class="modal">
+        <div class="modal-content">
+          <h1><span class="close1">&times;</span>Hello! Welcome to my Yoga website</h1>
+          <p>I love yoga because is accessible to all and it is a practical way to see how we each develop in our own special ways. Some people will be awesome at backbends, others rock at arm balances whilst some are wizards of the mind and meditation. Everyone’s their own special kind of superhero, you just need to take the time to see it – which kind are you?</p>
 
+          <ul class="about-list">
+            <li>I trained at Sampoorna Yoga, in Goa, India</li>
+            <li>Fully accredited and insured by Yoga Alliance UK.</li>
+            <li>Available to teach Vinyasa Flow, Ashtanga, Hatha, Core Power flow.</li>
+            <li>Also available for yoga for actors, one-to-one private sessions, corporate yoga, lunch-time office yoga, and private party hire.</li>
+            <li id="accreditedLi"><img id="accredited"src="css/images/yoga-alliance-logo.png" alt="Yoga Alliance UK Logo"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contactModal" class="modal">
+        <div class="modal-content contact-modal">
+          <div class="contact-container">
+          <h1><span class="close2">&times;</span>Contact</h1>
+
+            <div class="contact-text">
+              <p>For any enquiries pleace contact me at:
+                <a href="mailto:emthomsonyoga@gmail.com%20?Subject=Yoga%20Enquiry">emthomsonyoga@gmail.com</a>.<br><br> Or check out my<a href="https://www.facebook.com/EmThomsonYoga/"> facebook</a> page!<br>
+              </p>
+            </div>
+            <div class="contact-logo-container">
+              <img class="contact-logo" src="css/images/logo2.jpg" alt="Yoga logo">
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="classOneModal" class="modal">
+        <div class="modal-content">
+
+          <h1><span class="close3">&times;</span>Classes</h1>
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Battersea Yoga
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body about-list">
+                  <ul class="inline-b">
+                    <li class="no-bullet-point"><p class="day-of-week">Monday</p>
+                      <ul class="timings-list">
+                        <li>7am - 8am dynamic Hatha</li>
+                        <li>8:15am - 9:15am Hatha yoga</li>
+                      </ul>
+                    </li>
+                    <li class="no-bullet-point"><p class="day-of-week">Thursday</p>
+                      <ul class="timings-list">
+                        <li>5pm - 6pm dynamic yoga</li>
+                      </ul>
+                    </li>
+                    <li class="no-bullet-point"><p class="day-of-week">Friday</p>
+                      <ul class="timings-list">
+                        <li>9:30am - 10:45am Hatha yoga</li>
+                      </ul>
+                    </li>
+                    <li class="no-bullet-point"><p class="day-of-week">Saturday</p>
+                      <ul class="timings-list">
+                        <li>3:30pm - 4:45pm Hatha yoga</li>
+                      </ul>
+                    </li>
+                    <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
+                      <ul class="timings-list">
+                        <li>4:30pm - 5:45pm Hatha yoga</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div id="map-battersea"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Matchstick Pie House - New Cross
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body about-list">
+                  <ul class="inline-b">
+                    <li class="no-bullet-point"><p class="day-of-week">Monday</p>
+                      <ul class="timings-list">
+                        <li>5:30pm - 6:30pm Vinyasa yoga</li>
+                      </ul>
+                    </li>
+                    <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
+                      <ul class="timings-list">
+                        <li>12:30pm - 1:30pm Vinyasa yoga</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div id="map-matchstick"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Tooting Bec Lido
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body about-list">
+                  <ul class="inline-b">
+                    <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
+                      <ul class="timings-list">
+                        <li>9:30am - 10:30am Vinyasa yoga</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div id="map-tooting"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer"></div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3xZTbwZ-ozBgejB7TBwfOaLewBWVHvSY">
+   </script>
   </body>
 </html>
