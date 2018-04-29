@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Emily Thomson Yoga</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Karla|Libre+Baskerville|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <script src="/js/app.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="js/app.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="center">
@@ -25,29 +25,39 @@
     	</div>
 
       <div id="aboutModal" class="modal">
-        <div class="modal-content">
-          <h1><span class="close1">&times;</span>Hello! Welcome to my Yoga website</h1>
-          <p>I love yoga because is accessible to all and it is a practical way to see how we each develop in our own special ways. Some people will be awesome at backbends, others rock at arm balances whilst some are wizards of the mind and meditation. Everyone’s their own special kind of superhero, you just need to take the time to see it – which kind are you?</p>
+        <div class="modal-content swirls">
+          <div class="text-container">
+            <h1 class="margin-l-bottom"><span class="close1">&times;</span>Hello! Welcome to my Yoga website</h1>
+            <p class"margin-l-bottom">I first began my interest in yoga and movement whilst I was training to be an actor. For me yoga started as a way of waking up, warming up, and getting my body, brain and breath ready to rehearse. Before I knew it I was practicing every day and loving it - so I thought it was about time I trained and started teaching too!</p>
 
-          <ul class="about-list">
-            <li>I trained at Sampoorna Yoga, in Goa, India</li>
-            <li>Fully accredited and insured by Yoga Alliance UK.</li>
-            <li>Available to teach Vinyasa Flow, Ashtanga, Hatha, Core Power flow.</li>
-            <li>Also available for yoga for actors, one-to-one private sessions, corporate yoga, lunch-time office yoga, and private party hire.</li>
-            <li id="accreditedLi"><img id="accredited"src="css/images/yoga-alliance-logo.png" alt="Yoga Alliance UK Logo"></li>
-          </ul>
+            <p>I trained in South Goa, India, and have returned there for an internship to further my training and practice.</p>
+
+            <p>I love yoga because is accessible to all and it is a practical way to see how we each develop in our own special ways. Some people will be awesome at backbends, others rock at arm balances whilst some are wizards of the mind and meditation. It's like everyone’s their own special kind of superhero, you just need to take the time to see it – which kind are you? </p>
+
+            <ul class="about-list">
+              <li>I teach a number of regular weekly classes around London and am also available for one-to-one private sessios, group classes, corporate hire.</li>
+              <li>Available to teach Vinyasa Flow, Ashtanga, Hatha, Core Power flow.</li>
+              <li>Fully accredited and insured by Yoga Alliance UK.</li>
+              <li id="accreditedLi"><img id="accredited"src="css/images/yoga-alliance-logo.png" alt="Yoga Alliance UK Logo"></li>
+            </ul>
+          </div>
+          <div class="image-container-about">
+            <div id="about-image2"></div>
+            <div id="about-image"></div>
+            <div id="about-image3"></div>
+          </div>
         </div>
       </div>
 
       <div id="contactModal" class="modal">
-        <div class="modal-content contact-modal">
+        <div class="modal-content contact-modal swirls">
           <div class="contact-container">
           <h1><span class="close2">&times;</span>Contact</h1>
 
             <div class="contact-text">
               <p>For any enquiries pleace contact me at:
-                <a href="mailto:emthomsonyoga@gmail.com%20?Subject=Yoga%20Enquiry">emthomsonyoga@gmail.com</a>.<br><br> Or check out my<a href="https://www.facebook.com/EmThomsonYoga/"> facebook</a> page!<br>
-              </p>
+                <a href="mailto:emthomsonyoga@gmail.com%20?Subject=Yoga%20Enquiry">emthomsonyoga@gmail.com</a>.<br><br> Or check out my<a href="https://www.facebook.com/EmThomsonYoga/"> facebook</a> page!</p>
+                <p>Also available for private classes, group hire or corporate events - basically if you want yoga let's chat!</p>
             </div>
             <div class="contact-logo-container">
               <img class="contact-logo" src="css/images/logo2.jpg" alt="Yoga logo">
@@ -72,8 +82,10 @@
                 </h5>
               </div>
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body about-list">
-                  <ul class="inline-b">
+                <p class="margin-s-left margin-s-top">Book classes at <a href="https://batterseayoga.com/">https://batterseayoga.com/</a></p>
+                <div class="card-body about-list swirls">
+                  <div id="tooting-image"></div>
+                  <ul class="inline-b v-align margin-l-left">
                     <li class="no-bullet-point"><p class="day-of-week">Monday</p>
                       <ul class="timings-list">
                         <li>7am - 8am dynamic Hatha</li>
@@ -115,10 +127,11 @@
                   </button>
                 </h5>
               </div>
-
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body about-list">
-                  <ul class="inline-b">
+                <p class="margin-s-top margin-s-left">Online booking coming soon...</p>
+                <div class="card-body about-list swirls">
+                  <div id="matchstick-image"></div>
+                  <ul class="inline-b v-align margin-l-left">
                     <li class="no-bullet-point"><p class="day-of-week">Monday</p>
                       <ul class="timings-list">
                         <li>5:30pm - 6:30pm Vinyasa yoga</li>
@@ -145,8 +158,10 @@
                 </h5>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body about-list">
-                  <ul class="inline-b">
+                <p class="margin-s-left margin-s-top">Drop in price for SLSC members £5 non-members £8</p>
+                <div class="card-body about-list swirls">
+                  <div id="tooting-image"></div>
+                  <ul class="inline-b v-align margin-l-left">
                     <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
                       <ul class="timings-list">
                         <li>9:30am - 10:30am Vinyasa yoga</li>
@@ -158,14 +173,136 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
-
       <div class="footer"></div>
     </div>
+
+    <div class="clearfix"></div>
+
+    <div class="mob-show">
+      <div class="">
+        <!-- ABOUT -->
+        <div class="mobile-container">
+          <h1 class="margin-l-bottom">Hello! Welcome to my Yoga website</h1>
+          <p class"margin-l-bottom">I first began my interest in yoga and movement whilst I was training to be an actor. For me yoga started as a way of waking up, warming up, and getting my body, brain and breath ready to rehearse. Before I knew it I was practicing every day and loving it - so I thought it was about time I trained and started teaching too!</p>
+
+          <p>I trained in South Goa, India, and have returned there for an internship to further my training and practice.</p>
+
+          <p>I love yoga because is accessible to all and it is a practical way to see how we each develop in our own special ways. Some people will be awesome at backbends, others rock at arm balances whilst some are wizards of the mind and meditation. It's like everyone’s their own special kind of superhero, you just need to take the time to see it – which kind are you? </p>
+
+          <ul class="about-list">
+            <li>I teach a number of regular weekly classes around London and am also available for one-to-one private sessios, group classes, corporate hire.</li>
+            <li>Available to teach Vinyasa Flow, Ashtanga, Hatha, Core Power flow.</li>
+            <li>Fully accredited and insured by Yoga Alliance UK.</li>
+            <li id="accreditedLi"><img id="accredited"src="css/images/yoga-alliance-logo.png" alt="Yoga Alliance UK Logo"></li>
+          </ul>
+        </div>
+        <div class="image-container-about">
+          <div id="about-image2"></div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="mobile-container">
+        <h1>Contact</h1>
+
+          <div class="contact-text">
+            <p>For any enquiries pleace contact me at:
+              <a href="mailto:emthomsonyoga@gmail.com%20?Subject=Yoga%20Enquiry">emthomsonyoga@gmail.com</a>.<br><br> Or check out my<a href="https://www.facebook.com/EmThomsonYoga/"> facebook</a> page!</p>
+              <p>Also available for private classes, group hire or corporate events - basically if you want yoga let's chat!</p>
+          </div>
+          <div class="contact-logo-container">
+            <img class="contact-logo" src="css/images/logo2.jpg" alt="Yoga logo">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div id="about-image"></div>
+
+        <!-- CLASSES -->
+
+        <div class="mobile-container">
+          <h1>Classes</h1>
+
+          <div>
+            <h5 class="bold">Battersea Yoga</h5>
+            <p class="margin-s-left margin-s-top">Book classes at <a href="https://batterseayoga.com/">https://batterseayoga.com/</a></p>
+            <div class="about-list swirls">
+              <ul class="inline-b v-align margin-l-left">
+                <li class="no-bullet-point"><p class="day-of-week">Monday</p>
+                  <ul class="timings-list">
+                    <li>7am - 8am dynamic Hatha</li>
+                    <li>8:15am - 9:15am Hatha yoga</li>
+                  </ul>
+                </li>
+                <li class="no-bullet-point"><p class="day-of-week">Thursday</p>
+                  <ul class="timings-list">
+                    <li>5pm - 6pm dynamic yoga</li>
+                  </ul>
+                </li>
+                <li class="no-bullet-point"><p class="day-of-week">Friday</p>
+                  <ul class="timings-list">
+                    <li>9:30am - 10:45am Hatha yoga</li>
+                  </ul>
+                </li>
+                <li class="no-bullet-point"><p class="day-of-week">Saturday</p>
+                  <ul class="timings-list">
+                    <li>3:30pm - 4:45pm Hatha yoga</li>
+                  </ul>
+                </li>
+                <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
+                  <ul class="timings-list">
+                    <li>4:30pm - 5:45pm Hatha yoga</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Find it online <a href="https://www.google.co.uk/maps/place/Battersea+Yoga/@51.4744972,-0.1668228,15z/data=!3m1!4b1!4m5!3m4!1s0x487605a2c7ff5b55:0x7a840271e0eb8237!8m2!3d51.4744939!4d-0.1646288">here</a></p>
+              <!-- <div id="map-battersea"></div> -->
+            </div>
+          </div>
+
+          <div>
+            <h5 class="bold">Matchstick Pie House - New Cross</h5>
+            <p class="margin-s-top margin-s-left">Online booking coming soon...</p>
+            <div class="about-list swirls">
+              <ul class="inline-b v-align margin-l-left">
+                <li class="no-bullet-point"><p class="day-of-week">Monday</p>
+                  <ul class="timings-list">
+                    <li>5:30pm - 6:30pm Vinyasa yoga</li>
+                  </ul>
+                </li>
+                <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
+                  <ul class="timings-list">
+                    <li>12:30pm - 1:30pm Vinyasa yoga</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Find it online <a href="https://www.google.co.uk/maps/place/51%C2%B028'50.8%22N+0%C2%B002'22.3%22W/@51.4807924,-0.0417122,15z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d51.4807891!4d-0.0395182">here</a></p>
+              <!-- <div id="map-matchstick"></div> -->
+            </div>
+          </div>
+
+          <div>
+            <h5 class="bold">Tooting Bec Lido</h5>
+            <p class="margin-s-left margin-s-top">Drop in price for SLSC members £5, non-members £8</p>
+            <div class="about-list swirls">
+              <ul class="inline-b v-align margin-l-left">
+                <li class="no-bullet-point"><p class="day-of-week">Sunday</p>
+                  <ul class="timings-list">
+                    <li>9:30am - 10:30am Vinyasa yoga</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Find it online <a href="https://www.google.co.uk/maps/place/Tooting+Bec+Lido/@51.4314877,-0.1410435,15z/data=!3m1!4b1!4m5!3m4!1s0x4876042a99ce050f:0x4653cdda479f411!8m2!3d51.4314844!4d-0.1388495">here</a></p>
+              <!-- <div id="map-tooting"></div> -->
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div id="about-image3-1" class="mob-show"></div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

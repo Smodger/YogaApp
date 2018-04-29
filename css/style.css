@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Indie Flower', sans-serif;
 }
 
 .angular-google-map-container {
@@ -16,6 +17,7 @@
 main {
   margin: 0;
   padding: 0!important;
+
 }
 
 main.container{
@@ -71,7 +73,7 @@ html, body {
 }
 
 .center-box{
-  margin: auto;
+  margin: 0 auto 50px;
   width: 40%;
 }
 
@@ -137,6 +139,12 @@ html, body {
     overflow: scroll;
 }
 
+.swirls{
+  background-image: url('images/swirls.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+
 /* The Close Button */
 .close1, .close2, .close3, .close4 {
     color: #aaa;
@@ -180,6 +188,7 @@ html, body {
 
 .contact-text{
   float: left;
+  width: 65%
 }
 
 .contact-logo-container{
@@ -190,6 +199,7 @@ html, body {
 }
 
 .contact-logo{
+  margin-top: 20px;
   height: 200px;
   width: 200px;
   display: inline-block;
@@ -217,8 +227,180 @@ html, body {
   margin-left: 40px;
 }
 
+.margin-l-left{
+  margin-left: 30px;
+}
+
+.margin-s-left{
+  margin-left: 10px;
+}
+
+.margin-s-top{
+  margin-top: 10px;
+}
+
+.margin-l-bottom{
+  margin-bottom: 30px;
+}
+
 #map-tooting, #map-battersea, #map-matchstick{
   float: right;
   height: 300px;
-  width: 70%;
+  width: 35%;
+}
+
+#battersea-image{
+  display: inline-block;
+  margin: 0;
+  background-image: url('images/battersea.jpeg');
+  width: 35%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#matchstick-image{
+  display: inline-block;
+  margin: 0;
+  background-image: url('images/matchstick.jpeg');
+  width: 35%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.v-align{
+  vertical-align: top;
+}
+
+#tooting-image{
+  display: inline-block;
+  margin: 0;
+  background-image: url('images/tooting.jpg');
+  width: 35%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+}
+
+.image-container-about{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#about-image{
+  display: inline-block;
+  margin: 0;
+  background-image: url('images/about-image.jpg');
+  width: 31%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#about-image2{
+  display: inline-block;
+  margin: 0;
+  background-image: url('images/about-image2.jpeg');
+  width: 31%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#about-image3{
+  display: inline-block;
+  margin: 0;
+  background-image: url('images/about-image3.PNG');
+  width: 36%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#about-image3-1{
+  margin: 0;
+  background-image: url('images/about-image3.PNG');
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mob-show{
+  display: none;
+}
+
+@media screen and (max-width: 640px){
+  .mob-show{
+    display: block;
+  }
+}
+@media screen and (max-width: 640px){
+  .center{
+    background-position-x: 64%;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 640px){
+  .center-box{
+    display: none
+    /* margin: 0 auto 550px!important; */
+  }
+}
+@media screen and (max-width: 640px){
+  .info-box{
+    width: 450px!important;
+  	height: 150px!important;
+  }
+}
+@media screen and (max-width: 640px){
+  .info-text{
+  	font-size: 35px!important;
+  	line-height: 100px!important;
+  }
+}
+.mobile-container{
+  padding: 20px;
+}
+
+@media screen and (max-width: 640px){
+  .contact-text{
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .contact-logo-container{
+    text-align: center;
+    float: none;
+    margin: none;
+    position: inherit;
+  }
+}
+@media screen and (max-width: 640px){
+  #about-image, #about-image2, #about-image3{
+    width: 100%!important;
+  }
+}
+@media screen and (max-width: 640px){
+  .footer{
+    display: none;
+  }
+}
+@media screen and (max-width: 640px){
+  #map-tooting, #map-battersea, #map-matchstick{
+    width: 100%!important;
+    float: none;
+  }
+}
+
+.bold{
+  font-weight: 900;
 }

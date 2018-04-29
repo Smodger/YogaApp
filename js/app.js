@@ -43,26 +43,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         classOneModal.style.display = "none";
       }
   }
-  console.log('here');
-
+  var mapOne = null;
   function initMapBattersea() {
     var battersea = {lat: 51.4744939, lng: -0.1646288};
-    var mapOne = new google.maps.Map(document.getElementById('map-battersea'), {
-      zoom: 14,
+      mapOne = new google.maps.Map(document.getElementById('map-battersea'), {
+      zoom: 15,
       center: battersea
     });
     var marker = new google.maps.Marker({
       position: battersea,
       map: mapOne
     });
-    console.log(mapOne);
   }
   initMapBattersea();
+
 
   function initMapTooting() {
     var tooting = {lat: 51.4314844, lng: -0.1410382};
     var mapTwo = new google.maps.Map(document.getElementById('map-tooting'), {
-      zoom: 14,
+      zoom: 15,
       center: tooting
     });
     var marker = new google.maps.Marker({
@@ -73,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   initMapTooting();
 
   function initMapMatchstick(){
-    var matchstick = {lat: 51.4314844, lng: -0.1410382};
+    var matchstick = {lat: 51.4807891, lng: -0.0395182};
     var mapThree = new google.maps.Map(document.getElementById('map-matchstick'), {
-      zoom: 14,
+      zoom: 15,
       center: matchstick
     });
     var marker = new google.maps.Marker({
