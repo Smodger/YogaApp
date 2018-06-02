@@ -230,6 +230,10 @@ html, body {
   margin-left: 40px;
 }
 
+.quarter-width{
+  width: 25%;
+}
+
 .margin-l-left{
   margin-left: 30px;
 }
