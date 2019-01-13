@@ -71,16 +71,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   initMapTooting();
 
-  function initMapRevive(){
-    var revive = {lat: 51.4372209, lng: -0.1570409};
-    var mapThree = new google.maps.Map(document.getElementById('map-revive'), {
+  function initMapMatchstick(){
+    var matchstick = {lat: 51.4807891, lng: -0.0395182};
+    var mapThree = new google.maps.Map(document.getElementById('map-matchstick'), {
       zoom: 15,
-      center: revive
+      center: matchstick
     });
     var marker = new google.maps.Marker({
-      position: revive,
+      position: matchstick,
       map: mapThree
     });
   }
-  initMapRevive();
+  initMapMatchstick()
 });

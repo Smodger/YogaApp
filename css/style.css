@@ -250,7 +250,7 @@ html, body {
   margin-bottom: 30px;
 }
 
-#map-tooting, #map-battersea, #map-revive{
+#map-tooting, #map-battersea, #map-matchstick{
   float: right;
   height: 300px;
   width: 35%;
@@ -402,7 +402,7 @@ html, body {
   }
 }
 @media screen and (max-width: 640px){
-  #map-tooting, #map-battersea, #map-revive{
+  #map-tooting, #map-battersea, #map-matchstick{
     width: 100%!important;
     float: none;
   }
