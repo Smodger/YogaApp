@@ -251,9 +251,8 @@ html, body {
 }
 
 #map-tooting, #map-battersea, #map-matchstick{
-  float: right;
   height: 300px;
-  width: 35%;
+  width: 100%;
 }
 
 #battersea-image{
