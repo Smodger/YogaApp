@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   initMapTooting();
 
   function initMapRevive(){
-    var matchstick = {lat: 51.4372209, lng: -0.1570409};
+    var revive = {lat: 51.4372209, lng: -0.1570409};
     var mapThree = new google.maps.Map(document.getElementById('map-revive'), {
       zoom: 15,
       center: revive
