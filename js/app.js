@@ -75,12 +75,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var matchstick = {lat: 51.4372209, lng: -0.1570409};
     var mapThree = new google.maps.Map(document.getElementById('map-revive'), {
       zoom: 15,
-      center: matchstick
+      center: revive
     });
     var marker = new google.maps.Marker({
-      position: matchstick,
+      position: revive,
       map: mapThree
     });
   }
-  initMapRevive()
+  initMapRevive();
 });
