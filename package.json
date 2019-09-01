@@ -1,0 +1,19 @@
+{
+  "name": "yogaapp",
+  "version": "1.0.0",
+  "description": "My first coursework at GA - how quickly can you solve the maze?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smodger/YogaApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smodger/YogaApp/issues"
+  },
+  "homepage": "https://github.com/Smodger/YogaApp#readme"
+}
