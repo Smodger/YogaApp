@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   initMapTooting();
 
-  function initMapMatchstick(){
-    var matchstick = {lat: 51.4807891, lng: -0.0395182};
-    var mapThree = new google.maps.Map(document.getElementById('map-matchstick'), {
+  function initRevive(){
+    var matchstick = {lat: 51.4372209, lng: -0.1570409};
+    var mapThree = new google.maps.Map(document.getElementById('map-revive'), {
       zoom: 15,
       center: matchstick
     });
@@ -82,5 +82,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       map: mapThree
     });
   }
-  initMapMatchstick()
+  initRevive()
 });
